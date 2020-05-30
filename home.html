@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+<head>
+<title>Team1</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+:root {
+  --light-gray: #e8e7e7;
+  --dark-gray: #b3b3b3;
+  --darker-gray: #949493;
+  --button-hover: #ea615d;
+  --button: #f2403a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  font-size: 1rem;
+  padding: 5px 10px 5px 0;
+  margin-left: 20px;
+  border-bottom: 1px solid var(--dark-gray);
+  outline: none;
+}
+
+.search-mobile {
+  display: none;
+}
+
+::placeholder {
+  color: var(--light-gray);
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--button);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.logo {
+  width: 16px;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: var(--dark-gray);
+}
+
+.dot:nth-child(2) {
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+.navbar .container {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.navbar ul {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  padding: 0 20px;
+}
+
+.navbar ul li a:hover {
+  color: #000;
+}
+
+.section-a {
+  height: 700px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.section-a .container,
+.section-c .container,
+.section-d .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-a .container .mobile {
+  display: none;
+}
+
+.section-a .container .full {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 60%;
+  animation: anime 3s ease;
+}
+
+@keyframes anime {
+  0% {
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    left: 60%;
+    opacity: 1;
+  }
+}
+
+.section-b {
+  height: 100%;
+}
+
+.section-b .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.section-b .container p {
+  line-height: 1.4;
+  margin: 30px 0;
+}
+
+.section-b .container a {
+  display: flex;
+  align-items: center;
+  color: var(--button);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.section-b .container a .line {
+  width: 40px;
+  height: 2px;
+  background: var(--button);
+  margin-right: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.section-b .container a:hover {
+  color: var(--button-hover);
+}
+
+.section-b .container a:hover .line {
+  width: 60px;
+  background: var(--button-hover);
+}
+
+.section-a p,
+.section-c p,
+.section-d p {
+  color: var(--dark-gray);
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-left: 2px solid var(--light-gray);
+}
+
+.section-a,
+.section-b,
+.section-c {
+  margin-bottom: 50px;
+}
+
+.section-c .container img {
+  width: 100%;
+}
+
+.section-d {
+  background: url("https://images.unsplash.com/photo-1456613820599-bfe244172af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3306&q=80")
+    no-repeat center/cover;
+  height: 700px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.section-d .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.section-d p {
+  color: #fff;
+  border-left: 2px solid #fff;
+}
+
+.section-d h1 {
+  color: #fff;
+}
+
+/* MEDIA QUERIES  */
+
+@media (max-width: 1440px) {
+  .section-a .container img {
+    right: 0;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .navbar .container {
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-full {
+    display: none;
+  }
+
+  .search-mobile {
+    display: block;
+  }
+
+  .search-mobile img {
+    width: 20px;
+  }
+
+  .section-a p,
+  .section-c p {
+    color: #000;
+  }
+
+  .section-a .container .full {
+    display: none;
+  }
+
+  .section-a .container .mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    animation: anime 1s ease;
+  }
+
+  @keyframes anime {
+    0% {
+      bottom: -20px;
+      opacity: 0;
+    }
+    100% {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  .section-a .container {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .section-b .container,
+  .section-c .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .section-d .container {
+    display: flex;
+}
+}
+
+</style>
+</head>
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+            alt="apple-logo"
+            class="logo"
+          />
+        </a>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="search-full"><input type="text" placeholder="How can we help you?" /></li>
+          <li class="search-mobile"><a href="#"><img src="https://svgshare.com/i/L1v.svg" alt="magnifier" class="magnifier"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="section-a">
+      <div class="container">
+        <div>
+          <h1>Freedom calls.</h1>
+          <p>
+            Answer a call from your surfboard. Ask Siri to send a message.
+            Stream your favorite songs on your run. And do it all while leaving
+            your phone behind. Introducing Watch Series 3 with cellular. Now
+            you have the freedom to go with just your watch.
+          </p>
+          <a href="#" class="btn">Watch the keynote</a>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/9thN95R/watches.jpg" alt="apple-watch" class="full"/>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/mSXn9nR/watches-mobile.png" alt="watches-mobile" class="mobile"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-b">
+      <div class="container">
+        <div>
+          <h4>Know your runs. in and out.</h4>
+          <p>
+            Train smarter with more in-run stats. Want to compare a run to your
+            last five? Just swipe left. Mark splits by selecting pause or using
+            gestures, like tapping the screen or double-clicking the side
+            button. And get a full post-run repost, including elevation.
+          </p>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div>
+          <h4>Run in good spirits.</h4>
+          <p>
+            A little support can go a long way. You can receive encouraging
+            emoji from friends. And reminders triggered by your friends'shared
+            activity, the current weather, or your own history give you every
+            reason to run.
+          </p>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div>
+          <h4>Know your runs. in and out.</h4>
+          <p>
+            Run every Sunday and see how long you can keep your streak alive.
+            Fuel your run with exclusive Nike+ Run Club playlists on Music.
+          </p>
+          <a href="#"
+            ><div class="line"></div>
+            Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section-c">
+      <div class="container">
+        <div>
+          <h1>Nike Sport Band.</h1>
+          <h1>Light. Flexible.</h1>
+          <h1>Breathable.</h1>
+          <p>
+            Made from the same durable, lightweight fluoroelastomer as the
+            original Watch Sport Band, the Nike Sport Band reduces weight and
+            imprives ventilation via row after row of compression-molded
+            perforations.
+          </p>
+          <a href="#" class="btn">Buy now</a>
+        </div>
+        <img src="https://images.pexels.com/photos/515723/pexels-photo-515723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="apple-watch" />
+      </div>
+    </section>
+
+    <section class="section-d">
+      <div class="overlay">
+        <div class="container">
+          <div></div>
+          <div>
+            <h1>Take control of your health.</h1>
+            <p>
+              With built-in GPS and altimeter, Watch Nike+ has all the features
+              to help you take your run to the next level. You can even pair
+              your watch wirelessly with compatible gym equipment. And it's
+              swimproof, so you can take a post-run dip in the pool.
+            </p>
+            <a href="#" class="btn">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+</body>
+</html>
