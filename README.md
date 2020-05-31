@@ -1,2 +1,2 @@
 # team1
-website for covid heros
+website for covid heros.
