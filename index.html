@@ -1,471 +1,558 @@
 <!doctype html>
-<html>
-<head>
-<title>Corona</title>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+<html lang="en">
+  <head>
+    <title>Services Free Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-:root {
-  --light-gray: #e8e7e7;
-  --dark-gray: #b3b3b3;
-  --darker-gray: #949493;
-  --button-hover: #ea615d;
-  --button: #f2403a;
-}
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
-}
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-ul {
-  list-style: none;
-}
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-h1 {
-  font-size: 4rem;
-}
+    <link rel="stylesheet" href="css/aos.css">
 
-h4 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-
-a {
-  color: var(--dark-gray);
-  text-decoration: none;
-}
-
-input {
-  border: none;
-  font-size: 1rem;
-  padding: 5px 10px 5px 0;
-  margin-left: 20px;
-  border-bottom: 1px solid var(--dark-gray);
-  outline: none;
-}
-
-.search-mobile {
-  display: none;
-}
-
-::placeholder {
-  color: var(--light-gray);
-}
-
-.btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  background: var(--button);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 3px;
-}
-
-.btn:hover {
-  background-color: var(--button-hover);
-}
-
-.logo {
-  width: 16px;
-}
-
-.dots {
-  display: flex;
-}
-
-.dot {
-  width: 4px;
-  height: 4px;
-  background: var(--dark-gray);
-}
-
-.dot:nth-child(2) {
-  margin: 0 10px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 30px;
-}
-
-.navbar .container {
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-}
-
-.navbar ul {
-  justify-self: flex-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar li {
-  padding: 0 20px;
-}
-
-.navbar ul li a:hover {
-  color: #000;
-}
-
-.section-a {
-  height: 700px;
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.section-a .container,
-.section-c .container,
-.section-d .container {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-a .container .mobile {
-  display: none;
-}
-
-.section-a .container .full {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 60%;
-  animation: anime 3s ease;
-}
-
-@keyframes anime {
-  0% {
-    left: 50%;
-    opacity: 0;
-  }
-  100% {
-    left: 60%;
-    opacity: 1;
-  }
-}
-
-.section-b {
-  height: 100%;
-}
-
-.section-b .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-}
-
-.section-b .container p {
-  line-height: 1.4;
-  margin: 30px 0;
-}
-
-.section-b .container a {
-  display: flex;
-  align-items: center;
-  color: var(--button);
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.section-b .container a .line {
-  width: 40px;
-  height: 2px;
-  background: var(--button);
-  margin-right: 20px;
-  transition: width 0.3s ease-in-out;
-}
-
-.section-b .container a:hover {
-  color: var(--button-hover);
-}
-
-.section-b .container a:hover .line {
-  width: 60px;
-  background: var(--button-hover);
-}
-
-.section-a p,
-.section-c p,
-.section-d p {
-  color: var(--dark-gray);
-  padding-left: 20px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  border-left: 2px solid var(--light-gray);
-}
-
-.section-a,
-.section-b,
-.section-c {
-  margin-bottom: 50px;
-}
-
-.section-c .container img {
-  width: 100%;
-}
-
-.section-d {
-  background: url("https://images.unsplash.com/photo-1456613820599-bfe244172af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3306&q=80")
-    no-repeat center/cover;
-  height: 700px;
-  position: relative;
-  margin-top: 10px;
-}
-
-.section-d .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.section-d p {
-  color: #fff;
-  border-left: 2px solid #fff;
-}
-
-.section-d h1 {
-  color: #fff;
-}
-
-/* MEDIA QUERIES  */
-
-@media (max-width: 1440px) {
-  .section-a .container img {
-    right: 0;
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .navbar .container {
-    margin: 10px auto;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
-  .navbar .container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .search-full {
-    display: none;
-  }
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 
-  .search-mobile {
-    display: block;
-  }
 
-  .search-mobile img {
-    width: 20px;
-  }
+  <div class="site-wrap">
 
-  .section-a p,
-  .section-c p {
-    color: #000;
-  }
-
-  .section-a .container .full {
-    display: none;
-  }
-
-  .section-a .container .mobile {
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    animation: anime 1s ease;
-  }
-
-  @keyframes anime {
-    0% {
-      bottom: -20px;
-      opacity: 0;
-    }
-    100% {
-      bottom: 0;
-      opacity: 1;
-    }
-  }
-
-  .section-a .container {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-  }
-
-  .section-b .container,
-  .section-c .container {
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-
-  .section-d .container {
-    display: flex;
-}
-}
-
-</style>
-</head>
-<body>
- <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="#">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
-            alt="apple-logo"
-            class="logo"
-          />
-        </a>
-        <ul class="nav">
-          <li><a href="#">About Corona</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">About Team</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Live Tracker</a></li>
-          <li class="search-full"><input type="text" placeholder="check how many cases are there in your area?" /></li>
-          <li class="search-mobile"><a href="#"><img src="https://google.com" alt="magnifier" class="magnifier"></a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Showcase -->
-    <section class="section-a">
-      <div class="container">
-        <div>
-          <h1>CORONA !!</h1>
-          <p>
-            Answer a call from your surfboard. Ask Siri to send a message.
-            Stream your favorite songs on your run. And do it all while leaving
-            your phone behind. Introducing Watch Series 3 with cellular. Now
-            you have the freedom to go with just your watch.
-          </p>
-          <a href="#" class="btn">KNOW MORE</a>
-        </div>
-        <div>
-          <img src="https://i.ibb.co/9thN95R/watches.jpg" alt="apple-watch" class="full"/>
-        </div>
-        <div>
-          <img src="https://i.ibb.co/mSXn9nR/watches-mobile.png" alt="watches-mobile" class="mobile"/>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-    </section>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-    <section class="section-b">
       <div class="container">
-        <div>
-          <h4>Know your runs. in and out.</h4>
-          <p>
-            Train smarter with more in-run stats. Want to compare a run to your
-            last five? Just swipe left. Mark splits by selecting pause or using
-            gestures, like tapping the screen or double-clicking the side
-            button. And get a full post-run repost, including elevation.
-          </p>
-          <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-4">
+            <h1 class="m-0 site-logo"><a href="index.html">Services</a></h1>
+          </div>
+
+          <div class="col-8">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+                <li><a href="#projects-section" class="nav-link">Projects</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+
+
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+
+          </div>
+
+        
+        </div>
+      </div>
+      
+    </header>
+
+
+    <div class="site-blocks-cover overlay bg-light" style="background-image: url('images/hero_bg_1.jpg'); " id="home-section">
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-12 text-center align-self-center text-intro">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h1 class="text-white" data-aos="fade-up" data-aos-delay="">We Are Digital Services</h1>
+                <p class="lead text-white" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos magnam maxime voluptates libero, nobis impedit aut corrupti sunt possimus.</p>
+                <p data-aos="fade-up" data-aos-delay="200"><a href="#services-section" class="btn smoothscroll btn-primary">Our Services</a></p>
+
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+    </div>  
+
+    
+
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 mb-4 position-relative">
+            <h2 class="section-title">About Us</h2>
+          </div>
+          <div class="col-lg-4">
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="images/about.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4">
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section" id="services-section">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Services</h2>
+          </div>
+          
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/002-travel-1.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Content Marketing</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/001-travel.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Social Media Marketing</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/003-travel-2.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Brand &amp; Logo Design</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/004-travel-3.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Social Media Advertising</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/005-travel-4.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Social Media Advertising</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service d-flex h-100">
+              <div class="svg-icon">
+                <img src="images/flaticon/svg/006-food.svg" alt="Image" class="img-fluid">
+              </div>
+              <div class="service-about">
+                <h3>Web Design / Development</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <section class="site-section block__62272" id="projects-section">
+      
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 position-relative">
+            <h2 class="section-title text-center mb-5">Projects</h2>
           </div>
         </div>
-        <div>
-          <h4>Run in good spirits.</h4>
-          <p>
-            A little support can go a long way. You can receive encouraging
-            emoji from friends. And reminders triggered by your friends'shared
-            activity, the current weather, or your own history give you every
-            reason to run.
-          </p>
-          <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+
+        <div class="row justify-content-center mb-5" data-aos="fade">
+          <div id="filters" class="filters text-center button-group col-md-7">
+            <button class="btn btn-primary active" data-filter="*">All</button>
+            <button class="btn btn-primary" data-filter=".web">Web</button>
+            <button class="btn btn-primary" data-filter=".design">Design</button>
+            <button class="btn btn-primary" data-filter=".brand">Brand</button>
+          </div>
+        </div>  
+        
+        <div id="posts" class="row no-gutter">
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_5.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_5.jpg">
+            </a>
+          </div>
+
+          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_6.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_6.jpg">
+            </a>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_7.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_7.jpg">
+            </a>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_1.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_1.jpg">
+            </a>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_2.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_2.jpg">
+            </a>
+          </div>
+
+          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_3.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_3.jpg">
+            </a>
+          </div>
+
+          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+
+            <a href="images/img_4.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_4.jpg">
+            </a>
+
+          </div>
+
+          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_8.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_8.jpg">
+            </a>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_9.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_9.jpg">
+            </a>
+          </div>
+
+          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_10.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_10.jpg">
+            </a>
+          </div>
+
+          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/img_11.jpg" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="images/img_11.jpg">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="site-section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5 text-white">What Client Are Sayings</h2>
           </div>
         </div>
-        <div>
-          <h4>Know your runs. in and out.</h4>
-          <p>
-            Run every Sunday and see how long you can keep your streak alive.
-            Fuel your run with exclusive Nike+ Run Club playlists on Music.
-          </p>
-          <a href="#"
-            ><div class="line"></div>
-            Learn More</a
-          >
+        <div class="owl-carousel slide-one-item">
+          <div class="slide">
+            <blockquote>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p><cite>&mdash; Jean Smith</cite></p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p><cite>&mdash; Carl Spencer</cite></p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              <p><cite>&mdash; Ryan Peters</cite></p>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-c">
+    
+    <section class="site-section bg-light" id="blog-section">
       <div class="container">
-        <div>
-          <h1>Nike Sport Band.</h1>
-          <h1>Light. Flexible.</h1>
-          <h1>Breathable.</h1>
-          <p>
-            Made from the same durable, lightweight fluoroelastomer as the
-            original Watch Sport Band, the Nike Sport Band reduces weight and
-            imprives ventilation via row after row of compression-molded
-            perforations.
-          </p>
-          <a href="#" class="btn">Buy now</a>
+        <div class="row">
+          
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Blog Posts</h2>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="single.html">A small river named Duden flows by their place</a></h3>
+                <span class="date">April 25, 2019</span>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p class="more"><a href="single.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="single.html">A small river named Duden flows by their place</a></h3>
+                <span class="date">April 25, 2019</span>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p class="more"><a href="single.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
+            <div class="blog_entry">
+              <a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a>
+              <div class="p-4 bg-white">
+                <h3><a href="single.html">A small river named Duden flows by their place</a></h3>
+                <span class="date">April 25, 2019</span>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p class="more"><a href="single.html">Read More</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="https://images.pexels.com/photos/515723/pexels-photo-515723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="apple-watch" />
       </div>
     </section>
 
-    <section class="section-d">
-      <div class="overlay">
-        <div class="container">
-          <div></div>
-          <div>
-            <h1>Take control of your health.</h1>
+
+    <section class="site-section" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center mb-5">Contact Form</h2>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <form action="#" class="form">
+              <div class="row mb-4">
+                <div class="form-group col-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group col-6">
+                  <input type="text" class="form-control" placeholder="Full name">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="form-group col-12">
+                  <input type="email" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="form-group col-12">
+                  <input type="text" class="form-control" placeholder="Subject of the message">
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="form-group col-12">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Type your message here.."></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="submit" class="btn btn-primary" value="Send Message">
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <h3>London</h3>
+            <ul class="list-unstyled mb-5">
+              <li class="mb-3">
+                <strong class="d-block mb-1">Address</strong>
+                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Phone</strong>
+                <span>+1 232 3235 324</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Email</strong>
+                <span>youremail@domain.com</span>
+              </li>
+            </ul>
+
+            <h3>New York</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong class="d-block mb-1">Address</strong>
+                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Phone</strong>
+                <span>+1 232 3235 324</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Email</strong>
+                <span>youremail@domain.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-section bg-light footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <h3 class="footer-title">Services</h3>
+            <p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco, California, USA</p>
+          </div>
+          <div class="col-md-5 mx-auto">
+            <div class="row">
+              <div class="col-lg-4">
+                <h3 class="footer-title">Services</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Content Marketing</a></li>
+                  <li><a href="#">Brand & Logo</a></li>
+                  <li><a href="#">Social Advertising</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h3 class="footer-title">Resources</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Social Marketing</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h3 class="footer-title">Templates</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Illustration</a></li>
+                  <li><a href="#">Video Editing</a></li>
+                  <li><a href="#">Copywriting</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3 class="footer-title">Follow Me</h3>
+            <a href="#" class="social-circle m-2"><span class="icon-twitter"></span></a>
+            <a href="#" class="social-circle m-2"><span class="icon-facebook"></span></a>
+            <a href="#" class="social-circle m-2"><span class="icon-instagram"></span></a>
+            <a href="#" class="social-circle m-2"><span class="icon-dribbble"></span></a>
+            <a href="#" class="social-circle m-2"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
             <p>
-              With built-in GPS and altimeter, Watch Nike+ has all the features
-              to help you take your run to the next level. You can even pair
-              your watch wirelessly with compatible gym equipment. And it's
-              swimproof, so you can take a post-run dip in the pool.
-            </p>
-            <a href="#" class="btn">Explore Features</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with <i class="icon-heart"
+                  aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>  
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
+  </div> <!-- .site-wrap -->
 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
 
-
-
-</body>
+  
+  <script src="js/main.js"></script>
+  </body>
 </html>
