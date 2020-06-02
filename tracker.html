@@ -1,1 +1,102 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Live Tracker</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="{%static 'home/gradients.css'%}" type="text/css">
+  
+  <style>
+    .bg-blue {
+    color: #002c56;
+    background: #a5c9fd;
+    background: -webkit-linear-gradient(top, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
+    background: linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
+}
+
+.bg-green {
+    color: #015b25;
+    background: #9ae69c;
+    background: -webkit-linear-gradient(top, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
+    background: linear-gradient(to bottom, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
+}
+
+.bg-orange {
+    color: #582700;
+    background: #f5ce67;
+    background: -webkit-linear-gradient(top, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+    background: linear-gradient(to bottom, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+}
+
+.bg-red {
+    color: #5a0502;
+    background: #ff8582;
+    background: -webkit-linear-gradient(top, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
+    background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
+}
+
+    .my_shadow {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+  </style>
+
+</head>
+
+<body>
+    <div class="text-center mt-5">
+        <h1> Live Tracker</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-3">
+                <div class="card bg-blue text-center my_shadow">
+                    <div class="card-body">
+                        <h3 class='card-title'>{{Active}}</h3>
+                        <p class="card-text"> Active cases</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-green text-center my_shadow">
+                    <div class="card-body">
+                        <h3 class='card-title'>{{Recovered}}</h3>
+                        <p class="card-text"> Recovered</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-red text-center my_shadow">
+                    <div class="card-body">
+                        <h3 class='card-title'>{{Deaths}}</h3>
+                        <p class="card-text"> Deaths</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-orange text-center my_shadow">
+                    <div class="card-body">
+                        <h3 class='card-title'>{{Confirmed}}</h3>
+                        <p class="card-text">Total Confirmed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='text-center'>
+        <img src="images/heat_map.jpg" alt="heat map of cases per state" />
+    </div>
+
+</body>
+
+</html>
