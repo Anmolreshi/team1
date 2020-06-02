@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+    .heading {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    height: 320px;
+    overflow-x: auto;
+    margin-top: 0px;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 50px;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: solid 3px rgba(255, 255, 255, 0.1);
+}
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading"> Stats</h1>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>India</th>
+                    <th>China</th>
+                    <th>USA</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>Total Confirmed</td>
+                    <td>{{india_confirmed}}</td>
+                    <td>{{china_confirmed}}</td>
+                    <td>{{usa_confirmed}} </td>
+                </tr>
+                <tr>
+                    <td>Total Recovered</td>
+                    <td>{{india_recovered}}</td>
+                    <td>{{china_recovered}}</td>
+                    <td>{{usa_recovered}} </td>
+                </tr>
+                <tr>
+                    <td>Total Deaths</td>
+                    <td>{{india_deaths}}</td>
+                    <td>{{china_deaths}}</td>
+                    <td>{{usa_deaths}} </td>
+                </tr>
+                <tr>
+                    <td>Recovered percentage</td>
+                    <td>{{india_recovered_percent}}%</td>
+                    <td>{{china_recovered_percent}}%</td>
+                    <td>{{usa_recovered_percent}}%</td>
+                </tr>
+                <tr>
+                    <td>Deaths percentage</td>
+                    <td>{{india_deaths_percent}}%</td>
+                    <td>{{china_deaths_percent}}%</td>
+                    <td>{{usa_deaths_percent}}%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
