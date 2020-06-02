@@ -13,7 +13,7 @@
 	.site-logo {
 		font-size: 1.5rem;
 		a {
-			border: 4px solid $white;
+			border: 4px solid $black;
 			display: inline-block;
 			padding: 5px 10px;
 		}
@@ -40,7 +40,7 @@
 					right: 18px;
 					height: 2px;
 					width: 0;
-					background: $white;
+					background: $black;
 					transition: .3s all ease-in-out;
 				}
 				&:hover, &.active {
