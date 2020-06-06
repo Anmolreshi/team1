@@ -3,122 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Live Tracker</title>
+    <title>India Tracker</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
         .topnav {
-  background-color: #272773;
-
-
-  overflow: hidden;
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-    
-    /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-    
-    /* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #272773;
-  color: white;
+            background-color: #272773;
+            overflow: hidden;
+        }
+        /* Style the links inside the navigation bar */
         
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        /* Change the color of links on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Add a color to the active/current link */
+        
+        .topnav a.active {
+            background-color: #272773;
+            color: white;
+        }
         
         body,
-html {
-    background-color: #0e1531;
-}
-
-.heading {
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.my_shadow {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.card {
-    transition: 0.4s all;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
+        html {
+            background-color: #0e1531;
+        }
+        
+        .heading {
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .my_shadow {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card {
+            transition: 0.4s all;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+        }
         
         .bg-blue {
-    color: #002c56;
-    background: #a5c9fd;
-    background: -webkit-linear-gradient(top, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
-    background: linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
-}
-
-.bg-green {
-    color: #015b25;
-    background: #9ae69c;
-    background: -webkit-linear-gradient(top, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
-    background: linear-gradient(to bottom, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
-}
-
-.bg-orange {
-    color: #582700;
-    background: #f5ce67;
-    background: -webkit-linear-gradient(top, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
-    background: linear-gradient(to bottom, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
-}
-
-.bg-red {
-    color: #5a0502;
-    background: #ff8582;
-    background: -webkit-linear-gradient(top, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
-    background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
-}
-
-.bg-purple {
-    background: #DAE2F8;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #D6A4A4, #DAE2F8);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #D6A4A4, #DAE2F8);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bg-lemon {
-    background: #EDE574;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #E1F5C4, #EDE574);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #E1F5C4, #EDE574);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+            color: #002c56;
+            background: #a5c9fd;
+            background: -webkit-linear-gradient(top, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
+            background: linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
+        }
+        
+        .bg-green {
+            color: #015b25;
+            background: #9ae69c;
+            background: -webkit-linear-gradient(top, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
+            background: linear-gradient(to bottom, #9ae69c 0%, #9ce999 5%, #9cea9e 6%, #9cea9e 6%, #a0e99a 10%, #a3eb95 24%, #adee92 36%, #adee90 40%, #b3ef8f 45%, #b0f08f 46%, #b4f18a 50%, #b7f18d 51%, #b6f08a 53%, #baf18b 58%, #c4f780 77%, #c9f681 86%, #ccfa7e 90%, #cbf77c 94%, #cff87e 96%, #cff87e 100%);
+        }
+        
+        .bg-orange {
+            color: #582700;
+            background: #f5ce67;
+            background: -webkit-linear-gradient(top, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+            background: linear-gradient(to bottom, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+        }
+        
+        .bg-red {
+            color: #5a0502;
+            background: #ff8582;
+            background: -webkit-linear-gradient(top, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
+            background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
+        }
+        
+        .bg-purple {
+            background: #DAE2F8;
+            background: -webkit-linear-gradient(to bottom, #D6A4A4, #DAE2F8);
+            background: linear-gradient(to bottom, #D6A4A4, #DAE2F8);
+        }
+        
+        .bg-lemon {
+            background: #EDE574;
+            background: -webkit-linear-gradient(to bottom, #E1F5C4, #EDE574);
+            background: linear-gradient(to bottom, #E1F5C4, #EDE574);
+        }
     </style>
 </head>
 
 <body>
     <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="Articles.html">Articles</a>
-  <a href="about-team.html">About Team</a>
-  <a href="games.html">Game</a>
-  <a href="about-covid.html">About Covid</a>
-  <a href="gallery.html">Gallery</a>
-</div>
+        <a class="active" href="index.html">Home</a>
+        <a href="Articles.html">Articles</a>
+        <a href="about-team.html">About Team</a>
+        <a href="games.html">Game</a>
+        <a href="about-covid.html">About Covid</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
     <div class="heading">
-        <h1> Live Tracker</h1>
+        <h1> India Tracker</h1>
     </div>
 
     <div class="container mt-5">
