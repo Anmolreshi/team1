@@ -7,37 +7,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
     <style>
-        .topnav {
-  background-color: #272773;
-  
-  
-  overflow: hidden;
+        body,
+html {
+    background-color: #0e1531;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.heading {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.my_shadow {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #272773;
-  color: white;
+.card {
+    transition: 0.4s all;
 }
-    .bg-blue {
+
+.card:hover {
+    transform: translateY(-4px);
+}
+        
+        .bg-blue {
     color: #002c56;
     background: #a5c9fd;
     background: -webkit-linear-gradient(top, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
@@ -65,23 +63,28 @@
     background: linear-gradient(to bottom, #ff8582 0%, #fe8685 16%, #ff908e 44%, #fe908f 53%, #ff9692 62%, #ff9597 67%, #ff9a98 84%, #ff9b9b 85%, #fe9c9d 91%, #ff9e98 96%, #ff9d9c 96%, #ff9e9d 100%);
 }
 
-    .my_shadow {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+.bg-purple {
+    background: #DAE2F8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #D6A4A4, #DAE2F8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #D6A4A4, #DAE2F8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-  </style>
 
+.bg-lemon {
+    background: #EDE574;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E1F5C4, #EDE574);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E1F5C4, #EDE574);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+    </style>
 </head>
 
 <body>
-    <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="Articles.html">Articles</a>
-  <a href="about-team.html">About Team</a>
-  <a href="games.html">Game</a>
-  <a href="about-covid.html">About Covid</a>
-  <a href="gallery.html">Gallery</a>
-</div>
-    <div class="text-center mt-5">
+    <div class="heading">
         <h1> Live Tracker</h1>
     </div>
 
@@ -126,9 +129,6 @@
     </div>
 
     <div class='text-center'>
-        <a href="stats.html">
-            <h2>Click to see how India compares with other countries</h2>
-        </a>
         <img src="images/heat_map.jpg" alt="heat map of cases per state" />
     </div>
 
