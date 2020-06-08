@@ -61,7 +61,106 @@
   
   
   
-  
+  $transition-speed: .25s;
+
+.box {
+  color: white;
+  width: 45em;
+  height: 13em;
+  background: tomato;
+  position: relative;
+  overflow: hidden;
+  margin: 2.5em auto;
+  font-family: 'PT Sans';
+  box-shadow: .35em .35em 0 0 #000;
+}
+ 
+.left {
+  padding: 3em;
+  height: 100%;
+  width: 100%;
+  h1 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.2em;
+    width: 18em;
+    margin: 0;
+  }
+}
+
+.right {
+  height: 100%;
+  width: 100%;
+  background: #383838;
+  position: absolute;
+  top: 0;
+  left: 28em;
+  transition: $transition-speed;
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13em 3em 0 0;
+    border-color: transparent #383838 transparent transparent;
+    left: -3em;
+    top: 0;
+    position: absolute;
+  } 
+  &:hover {
+    transition: $transition-speed;
+    transform: translateX(-28em);
+  }
+  &:hover a {
+    transition: $transition-speed; 
+    transform: 
+      translateX(0)
+      scale(1.5);
+  }
+  &:hover a::before {
+    width: 4.9em;
+  }
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 2.1em;
+    transform: translateX(-6.75em); 
+    transition: $transition-speed; 
+    position: relative;
+    line-height: 6.5em;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      height: .09em;
+      position: absolute;
+      background: white;
+      bottom: 4em;
+      left: 7.75em;
+      transition: $transition-speed;
+      width: 0;
+    }
+    &::before {
+      content: '';
+      height: .1em;
+      width: 0;
+      position: absolute;
+      background: white;
+      bottom: 2.5em;
+      transition: $transition-speed;
+    }
+    &:hover::before,
+    &:hover::after {
+      width: 6em;
+      transition: $transition-speed;
+    }
+  }
+}
   
   
  
@@ -156,5 +255,17 @@
   <br>
   <br>
   
+  
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<div class="box">
+  <div class="left">
+    <h1>Headline</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit nobis dolore sunt saepe reiciendis quo.</p>
+  </div>
+  <div class="right">
+    <a href="#">Contact us!</a>
+  </div>
+</div> 
 </body>
 </html>
