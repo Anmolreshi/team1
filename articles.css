@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin: 50px
+}
+
+.heading h1 {
+    display: inline;
+    padding: 6px 20px;
+    border: 5px solid #000;
+}
+
+.articles {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles a {
+    text-decoration: none;
+    color: black;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+    box-shadow: 0 2px 8px rgb(145, 145, 145);
+    transition: 0.3s;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.article:hover {
+    box-shadow: 0 8px 20px rgb(145, 145, 145);
+}
+
+.article p {
+    margin: 2rem;
+    color: rgb(80, 80, 80);
+    line-height: 200%;
+}
+
+.article-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.article-body img {
+    width: 40%;
+    height: 50%;
+}
