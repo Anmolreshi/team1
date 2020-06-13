@@ -7,10 +7,9 @@ body {
     margin: 50px
 }
 
-.heading h1 {
-    display: inline;
-    padding: 6px 20px;
-    border: 5px solid #000;
+h1{
+    color:#9400D3;
+    font-size: 500% ;
 }
 
 .articles {
@@ -44,18 +43,26 @@ body {
 
 .article p {
     margin: 2rem;
-    color: rgb(80, 80, 80);
+    color:#FF0000;
     line-height: 200%;
 }
 
 .article-body {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2rem;
 }
 
 .article-body img {
     width: 40%;
     height: 50%;
+}
+h2{
+    color:#7CFC00;
+    font-family:;
+    font-size: 200%;
+}
+h3{
+    color:#FF1493;
 }
