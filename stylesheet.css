@@ -1,0 +1,81 @@
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+header{
+    height: 100px;
+    background: #1a1717;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    position: fixed;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 5%;
+}
+.link{
+    list-style: none;
+}
+.link li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.link li a{
+    transition: all 0.8s ease 0s;
+}
+.link li a:hover{
+    background: rgba(0,136,169,0.8);
+}
+#cont{
+    padding:8px 25px;
+    background: rgba(0,136,169,1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+#cont:hover{
+    background: rgba(0,136,169,0.8);
+}
+#banner{
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    top:100px;
+    
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 170px;
+    transition: all 0.5s ease 0s;
+    font-size: 90px;
+    font-family: "Sriracha",cursive;
+    color: white;
+    background-image: url("retro.jpg");
+    background-size: contain;
+    clear:both;
+    text-shadow: 2px 2px #ff0000;
+
+}
+.tabs{
+    width:100%;
+    position: relative;
+    top: 730px;
+    background: grey;
+    height: 1500px;
+}
