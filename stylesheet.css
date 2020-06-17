@@ -66,7 +66,7 @@ header{
     font-size: 90px;
     font-family: "Sriracha",cursive;
     color: white;
-    background-image: url("images/retro.jpg");
+    background-image: url("retro.jpg");
     background-size: contain;
     clear:both;
     text-shadow: 2px 2px #ff0000;
