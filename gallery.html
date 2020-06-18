@@ -157,6 +157,147 @@ input:not(:checked)+label+.ci {
   display: inline-block;
   margin-left: 6px;
 }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Navbar</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <style >
+      	body
+      	{
+      		margin: 0;
+      		padding: 0;
+      		font-family:  'Poppins', sans-serif;
+      		background-attachment: fixed;
+      	}
+      	header
+      	{
+      		position: relative;
+      		max-width: 1400px;
+      		margin: 10px auto;
+      		padding: 10px;
+      		background:#18187d;
+      		box-sizing: border-box;
+      		border-radius: 4px;
+      		box-shadow: 0 2px 10px rgba(0,0,0,.2);
+
+      	}
+      	.logo
+      	{
+      		color: #ffffff;
+      		height: 60px;
+      		font-size: 35px;
+      		line-height: 60px;
+      		padding: 0 20px;
+      		text-align: center;
+      		box-sizing: border-box;
+      		float: left;
+
+      		font-weight: bold;
+      		text-decoration: none;
+      	}
+      	nav
+      	{
+      		float: right;
+      	}
+      	.clearfix{
+      		clear: both;
+      	}
+      	nav ul
+      	{
+      		margin: 0;
+      		padding:0;
+      		display: flex;
+      	}
+      	nav ul li {
+      		list-style: none;
+      	}
+      	nav ul li a 
+      	{
+      		display: block;
+      		margin: 10px 0;
+      		padding: 10px 20px;
+      		text-decoration: none;
+      		color: #ffffff;
+      	}
+      	nav ul li a.active,
+      	nav ul li a:hover
+      	{
+      		background: #069370;
+      		color: #fff;
+      		transition: 0,5s;
+
+      	}
+      	@media (max-width: 1200px)
+      	{
+                 header
+                 {
+                 	margin: 20px;
+                 }
+      	}
+      	@media (max-width: 768px)
+      	{
+      		.menu-toggle
+      		{
+      			display: block;
+      			width: 40px;
+      			height: 40px;
+      			margin: 10px;
+      			background: #ccc;
+      			float: right;
+      			cursor: pointer;
+      			text-align: center;
+      			font-size: 30px;
+      			color: #069370;
+      		}
+      		.menu-toggle:before
+      		{
+      			content: '\f0c9';
+      			font-family: fontAwesome;
+      			line-height: 40px;
+      		}
+      		.menu-toggle.active:before
+      		{
+      			content: '\f0c9';
+      			font-family: fontAwesome;
+      			line-height: 40px;
+      		}
+      		nav
+      		{
+      			display: none;
+      		}
+      		nav.active
+      		{
+      			display: block;
+      			width: 100%;
+      		}
+      		nav.active ul
+      		{
+      			display: block;
+      		}
+      	}
+      	.logo-img{
+    position: relative;
+    margin: 5px 5px -55px 6px;
+}
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </style>
     
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -168,6 +309,41 @@ input:not(:checked)+label+.ci {
 
 
   <body>
+        <header>
+    	<a href="index.html" id="logo"><img class="logo-img" src="images/logo.JPG" ALT="align box" ALIGN=CENTER></a>
+    	<div class="menu-toggle"></div>
+    	<nav>
+    		<ul>
+    			<li><a href="#" class="active">Home</a></li>
+    			<li><a href="#">About Covid</a></li>
+    			<li><a href="#">Games</a></li>
+    			<li><a href="#">Gallery</a></li>
+    			<li><a href="#">About Us</a></li>
+    		</ul>
+    	</nav>
+    	<div class="clearfix"></div>
+    </header>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=
+" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){$('..menu-toggle').click(function(){$('.menu-toggle').toggleClass('active')
+		$('nav').toggleClass('active')
+})
+})
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+ 
 <h1>COVID 19-GALLERY</h1>
 
 
