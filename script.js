@@ -3,117 +3,117 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const cardArray = [
     {
-      name: '1',
+      name: 'wash',
       img: 'images/wash.png'
     },
     {
-      name: '2',
+      name: 'touch',
       img: 'images/touch.png'
     },
     {
-      name: '3',
+      name: 'ramen',
       img: 'images/ramen.png'
     },
     {
-      name: '4',
+      name: 'pizza',
       img: 'images/pizza.png'
     },
     {
-      name: '5',
+      name: 'mask',
       img: 'images/mask.png'
     },
     {
-      name: '6',
+      name: 'kfc',
       img: 'images/kfc.png'
     },
     {
-      name: '7',
+      name: 'hand',
       img: 'images/hand.png'
     },
     {
-      name: '8',
+      name: 'food',
       img: 'images/food.png'
     },
     {
-      name: '9',
+      name: 'fat',
       img: 'images/fat.png'
     },
     {
-      name: '10',
+      name: 'fam',
       img: 'images/fam.png'
     },
     {
-      name: '11',
+      name: 'cough',
       img: 'images/cough.png'
     },
     {
-      name: '12',
+      name: 'contact',
       img: 'images/contact.png'
     },
    
     {
-      name: '13',
+      name: 'coke',
       img: 'images/coke.png'
     },
     {
-      name: '14',
+      name: 'burger',
       img: 'images/burger.png'
     },
     {
-      name: '1',
+      name: 'wash',
       img: 'images/wash.png'
     },
     {
-      name: '2',
+      name: 'touch',
       img: 'images/touch.png'
     },
     {
-      name: '3',
+      name: 'ramen',
       img: 'images/ramen.png'
     },
     {
-      name: '4',
+      name: 'pizza',
       img: 'images/pizza.png'
     },
     {
-      name: '5',
+      name: 'mask',
       img: 'images/mask.png'
     },
     {
-      name: '6',
+      name: 'kfc',
       img: 'images/kfc.png'
     },
     {
-      name: '7',
+      name: 'hand',
       img: 'images/hand.png'
     },
     {
-      name: '8',
+      name: 'food',
       img: 'images/food.png'
     },
     {
-      name: '9',
+      name: 'fat',
       img: 'images/fat.png'
     },
     {
-      name: '10',
+      name: 'fam',
       img: 'images/fam.png'
     },
     {
-      name: '11',
+      name: 'cough',
       img: 'images/cough.png'
     },
     {
-      name: '12',
+      name: 'contact',
       img: 'images/contact.png'
     },
    
     {
-      name: '13',
+      name: 'coke',
       img: 'images/coke.png'
     },
     {
-      name: '14',
+      name: 'burger',
       img: 'images/burger.png'
     }
      
