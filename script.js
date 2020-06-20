@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
       card.setAttribute('src', 'images/corona.jpg')
+      card.style.cssText="border: 2px solid #941e3f;"
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
