@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  //card options
+  
   const cardArray = [
     {
       name: '',
@@ -131,8 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', '.jpg')
-      card.style.cssText="border: 2px solid #941e3f;"
+      card.setAttribute('src', '.png')
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -146,20 +145,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1]
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', '.jpg')
-      cards[optionTwoId].setAttribute('src', '.jpg')
+      cards[optionOneId].setAttribute('src', '.png')
+      cards[optionTwoId].setAttribute('src', '.png')
       alert('You have clicked the same image!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       alert('You found a match')
-      cards[optionOneId].setAttribute('src', '.jpg')
-      cards[optionTwoId].setAttribute('src', '.jpg')
+      cards[optionOneId].setAttribute('src', '.png')
+      cards[optionTwoId].setAttribute('src', '.png')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute('src', '.jpg')
-      cards[optionTwoId].setAttribute('src', '.jpg')
+      cards[optionOneId].setAttribute('src', '.png')
+      cards[optionTwoId].setAttribute('src', '.png')
       alert('Sorry, try again')
     }
     cardsChosen = []
@@ -170,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  
   function flipCard() {
     var cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
