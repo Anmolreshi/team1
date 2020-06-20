@@ -3,119 +3,120 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const cardArray = [
     {
-      name: '',
-      img: '.png'
+      name: '1',
+      img: 'images/wash.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '2',
+      img: 'images/touch.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '3',
+      img: 'images/ramen.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '4',
+      img: 'images/pizza.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '5',
+      img: 'images/mask.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '6',
+      img: 'images/kfc.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '7',
+      img: 'images/hand.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '8',
+      img: 'images/food.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '9',
+      img: 'images/fat.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '10',
+      img: 'images/fam.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '11',
+      img: 'images/cough.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '12',
+      img: 'images/contact.png'
     },
    
     {
-      name: '',
-      img: '.png'
+      name: '13',
+      img: 'images/coke.png'
     },
     {
-      name: '',
-      img: '.png'
-    },
-     {
-      name: '',
-      img: '.png'
+      name: '14',
+      img: 'images/burger.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '1',
+      img: 'images/wash.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '2',
+      img: 'images/touch.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '3',
+      img: 'images/ramen.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '4',
+      img: 'images/pizza.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '5',
+      img: 'images/mask.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '6',
+      img: 'images/kfc.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '7',
+      img: 'images/hand.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '8',
+      img: 'images/food.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '9',
+      img: 'images/fat.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '10',
+      img: 'images/fam.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '11',
+      img: 'images/cough.png'
+    },
+    {
+      name: '12',
+      img: 'images/contact.png'
     },
    
     {
-      name: '',
-      img: '.png'
+      name: '13',
+      img: 'images/coke.png'
     },
     {
-      name: '',
-      img: '.png'
+      name: '14',
+      img: 'images/burger.png'
     }
+     
    
   ]
 
