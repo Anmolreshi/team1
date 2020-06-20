@@ -3,120 +3,120 @@ document.addEventListener('DOMContentLoaded', () => {
   //card options
   const cardArray = [
     {
-      name: '1',
-      img: 'images/burger.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '2',
-      img: 'images/coke.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '3',
-      img: 'images/contact.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '4',
-      img: 'images/cough.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '5',
-      img: 'images/fam.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '6',
-      img: 'images/fat.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '7',
-      img: 'images/food.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '8',
-      img: 'images/hand.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '9',
-      img: 'images/kfc.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '10',
-      img: 'images/mask.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '11',
-      img: 'images/pizza.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '12',
-      img: 'images/ramen.png'
+      name: '',
+      img: '.png'
     },
    
     {
-      name: '13',
-      img: 'images/touch.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '14',
-      img: 'images/wash.png'
+      name: '',
+      img: '.png'
+    },
+     {
+      name: '',
+      img: '.png'
     },
     {
-      name: '1',
-      img: 'images/burger.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '2',
-      img: 'images/coke.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '3',
-      img: 'images/contact.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '4',
-      img: 'images/cough.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '5',
-      img: 'images/fam.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '6',
-      img: 'images/fat.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '7',
-      img: 'images/food.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '8',
-      img: 'images/hand.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '9',
-      img: 'images/kfc.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '10',
-      img: 'images/mask.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '11',
-      img: 'images/pizza.png'
-    },
-    {
-      name: '12',
-      img: 'images/ramen.png'
+      name: '',
+      img: '.png'
     },
    
     {
-      name: '13',
-      img: 'images/touch.png'
+      name: '',
+      img: '.png'
     },
     {
-      name: '14',
-      img: 'images/wash.png'
-    },
-    
+      name: '',
+      img: '.png'
+    }
+   
   ]
 
   cardArray.sort(() => 0.5 - Math.random())
@@ -127,11 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
   var cardsChosenId = []
   const cardsWon = []
 
-  //create your board
+  
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'images/blank1.jpg')
+      card.setAttribute('src', '.jpg')
       card.style.cssText="border: 2px solid #941e3f;"
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
@@ -139,27 +139,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  //check for matches
+  
   function checkForMatch() {
     var cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'images/corona.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/corona.jpg')
+      cards[optionOneId].setAttribute('src', '.jpg')
+      cards[optionTwoId].setAttribute('src', '.jpg')
       alert('You have clicked the same image!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       alert('You found a match')
-      cards[optionOneId].setAttribute('src', 'images/white1.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/white1.jpg')
+      cards[optionOneId].setAttribute('src', '.jpg')
+      cards[optionTwoId].setAttribute('src', '.jpg')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute('src', 'images/corona.jpg')
-      cards[optionTwoId].setAttribute('src', 'images/corona.jpg')
+      cards[optionOneId].setAttribute('src', '.jpg')
+      cards[optionTwoId].setAttribute('src', '.jpg')
       alert('Sorry, try again')
     }
     cardsChosen = []
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  //flip your card
+  
   function flipCard() {
     var cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
