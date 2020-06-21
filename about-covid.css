@@ -20,7 +20,7 @@ body
 	display: block;
 	background-image: url("../images/Corona.png");
 	margin-left:  11%;
-	padding: 2%;
+	padding: ;
 }
 
 .symptom h2
@@ -75,11 +75,6 @@ table tr th
 {
 	padding: 6px;
 	margin: 3px;
-}
-
-.container
-{
-	display: flex;
 }
 
 @media screen and (min-width: 400px)
