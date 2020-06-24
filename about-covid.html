@@ -1,80 +1,89 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 	
-	      <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <style >
-	      .padd {
-  padding: 20px;
+	     .padd 
+	      {
+                     padding: 20px;
  
-}
-      	body
-      	{
-      		margin: 10;
-      		padding: 10;
-      		font-family:  'Poppins', sans-serif;
-      		background-attachment: fixed;
-      	}
+               }
+	 body
+		{
+			margin: 10;
+			padding: 10;
+			font-family:  'Poppins', sans-serif;
+                        background-attachment: fixed;
+			background-color: rgb(212, 37, 37);  
+		}
       	header
-      	{
-      		position: relative;
-      		max-width: 1400px;
-      		margin: 10px auto;
-      		padding: 10px;
-      		background:#18187d;
-      		box-sizing: border-box;
-      		border-radius: 4px;
-      		box-shadow:  0 2px 10px rgba(0,0,0,.2);
-
-      	}
+		{
+			position: relative;
+			max-width: 1400px;
+			margin: 10px auto;
+			padding: 10px;
+			background:#18187d;
+			box-sizing: border-box;
+			border-radius: 4px;
+			box-shadow:  0 2px 10px rgba(0,0,0,.2);
+		}
       	.logo
-      	{
-      		color: #ffffff;
-      		height: 60px;
-      		font-size: 35px;
-      		line-height: 60px;
-      		padding: 0 20px;
-      		text-align: center;
-      		box-sizing: border-box;
-      		float: left;
+		{
+			color: #ffffff;
+			height: 60px;
+			font-size: 35px;
+			line-height: 60px;
+			padding: 0 20px;
+			text-align: center;
+			box-sizing: border-box;
+			float: left;
 
-      		font-weight: bold;
-      		text-decoration: none;
-      	}
+			font-weight: bold;
+			text-decoration: none;
+		}
       	nav
-      	{
-      		float: right;
-      	}
-      	.clearfix{
+		{
+			float: right;
+		}
+	      
+      	.clearfix
+	      {
       		clear: both;
-      	}
+      	     }
+	      
       	nav ul
-      	{
-      		margin: 0;
-      		padding:0;
-      		display: flex;
-      	}
-      	nav ul li {
-      		list-style: none;
-      	}
+		{
+			margin: 0;
+			padding:0;
+			display: flex;
+		}
+	      
+      	nav ul li 
+	      {
+      		    list-style: none;
+         	}
+	      
       	nav ul li a 
-      	{
-      		display: block;
-      		margin: 10px 0;
-      		padding: 10px 20px;
-      		text-decoration: none;
-      		color: #ffffff;
-      	}
+		{
+			display: block;
+			margin: 10px 0;
+			padding: 10px 20px;
+			text-decoration: none;
+			color: #ffffff;
+		}
+	      
       	nav ul li a.active,
       	nav ul li a:hover
-      	{
-      		background: #069370;
-      		color: #fff;
-      		transition: 0,5s;
-
-      	}
+		{
+			background: #069370;
+			color: #fff;
+			transition: 0,5s;
+		}
+	      
       	@media (max-width: 1200px)
       	{
                  header
@@ -123,17 +132,19 @@
       			display: block;
       		}
       	}
-      	.logo-img{
-    position: relative;
-    margin: 5px 5px -55px 6px;
-}
-.boxing {
-  background-color: lightgrey;
-  width: 1350px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}	      
+      	.logo-img
+	      {
+                    position: relative;
+                    margin: 5px 5px -55px 6px;
+               }
+    .boxing 
+	      {
+		  background-color: lightgrey;
+		  width: 100%;
+		  border: 15px solid green;
+		  padding: 50px;
+		  margin: 15px;
+              }	      
       </style>
 
 	<title>About Covid-19</title>
@@ -173,8 +184,7 @@
 </script>
 
 	<div id="firsdiv">
-		  <img src="images/cover.png" height="400px" width="1390
-								    px" />
+		  <img src="images/cover.png" height="400px" width="1390px" />
 	 </div>
 	<div  class="padd">
 	<div class="coro">
@@ -202,71 +212,162 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 <div>
 	<div class="symptom">
 		<center><h2>What are its Common Symptoms ?</h2></center>
-		
-	</div>
+		<ul class="sym">
+			<p>Common symptoms</p>
+			<li>Fever</li>
+			<li>Dry cough</li>
+			<li>Tiredness</li>
+			<li>AChes and pains</li>
+		</ul>
+		<ul class="sym">
+			<p>Common symptoms</p>
+			<li>Sore throat</li>
+			<li>Diarrhoea</li>
+			<li>Conjunctivitis</li>
+			<li>Headache</li>
+		</ul>
+		<ul class="sym">	
+			<p>Severe symptoms</p>
+			<li>Loss of taste</li>
+			<li>Difficulty or shortness of breath</li>
+			<li>Chest pain or pressure</li>
+			<li>A rash on skin or discolourization of fingers or toes</li>
+		</ul>
+		<br>
+		<center>
+		   <button type="button" onclick="show()" class="btn btn-info">Show more Symptoms</button>
+		</center>
+	 </div>
 
-	
 		<div class="imagess">
-			<img src="images/symp1.png" alt="Loading" width="1300" height="700"/>
-    
-                       
-                </div>
+		     <img src="images/symp1.png" alt="Loading"/>                   
+               </div>
   
 
 <div>
-	<div class=".dos-and-donts div">
-		<center><h2>Ways Of Prevention</h2><center>
+	<div class="dos-and-donts div">
+		<center><h2>Ways Of Prevention</h2><center>		
 		<div class="row dos-and-donts">
-			<div>
+			<div class="brd-bottom">
 				<span> Avoid Handshake</span> 
 				<img src="images/nohandshake.jpg" alt="No handshake">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Wash hands with clean water and soap </span>
 				<img src="images/washhand.jpg" alt="Wash hands">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Use sanitizer </span>
 				<img src="images/san.jpg" alt="Sanitizer">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Wear face mask </span>
 				<img src="images/mask.png" atl="person wearing mask">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Avoid touching your face </span>
 				<img src="images/ntm.jpg" alt="no touching facing">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Keep Social distance </span>
 				<img src="images/distance.png" alt="people 2 meters apart">
 			</div>
-			<div>
+			<div class="brd-bottom">
 				<span> Avoid crowded places </span>
 				<img src="images/avoidcrowd.png" alt="avoid crowd">
+			</div>
+			<div class="brd-bottom">
+				<span>Stay at home</span>
+				<img src="images/shome.jpg" alt="stay home">
 			</div>
 
 		</div>
 	</div>
 </div>
-		<br>
-		<center><H2> Q&A On Cornavirus </H2></center>
-		<br>
-		<br>
-		<br>
+
+<div class="healthy-lifestyle">
+		<center>	
+			<h2>Living healthy lifestyle during Covid-19</h2>
+			<div>
+				<span>Do physical exercise for at least 30mins a day</span>
+				<!--<img src="images/yoga.jpg">-->
+			</div>
+			<div>
+				<span>Avoid smoking and drinking</span>
+				<!--<img src="images/nosmoking.png">-->
+			</div>
+			<div>
+				<span>Eat healthy food</span>
+				<!--<img src="images/fruits.jpg">-->
+			</div>
+		</center>
 		
-		
-		
-<div>
-	<Center><H1>Want to Contribute <H1></Center>
-		<a href="https://www.pmcares.gov.in/en/"><img src="images/pm.jpg" height="630" width="1390"/></a>
 </div>
-<div>
+		<br>
+		<br>
+		<br>
+		<center><H2> Q&A On Coronavirus</H2></center>
+		<center>
+				<div class="QnA">
+					<h4>What is Covid-19</h4>
+					<span>Can Covid-19 be caught from person with no Symptoms? </span>
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses" target="_blank">
+						<img src="images/plus.png"> 
+					</a>
+				</div>
+				<div class="QnA">
+					<h4>Tobacco and Covid-19</h4>
+					<span>As a smoker, is my risk of getting Covid-19 virus higher than that of non-smoker?</span>
+					<a href="https://www.who.int/news-room/q-a-detail/q-a-on-tobacco-and-covid-19" target="_blank" >
+						<img src="images/plus.png"> 
+					</a>
+				</div>
+				<div class="QnA">
+					<h4>Medical breakthrough</h4>
+					<span>Should i take Dexamethasone to prevent Covid-19?</span>
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-dexamethasone-and-covid-19" target="_blank">
+					   <img src="images/plus.png">
+				    </a>
+				</div>
+				<div class="QnA">
+					<h4>Older people and Covid-19</h4>
+					<span>Are older people at high risk?</span>
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-on-on-covid-19-for-older-people" target="_blank">
+					   <img src="images/plus.png">
+				   </a>
+				</div>
+				<div class="QnA">
+					<h4>Medical breakthrough</h4>
+					<span>Is there vaccine, drug or treatment for Covid-19?</span>
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-on-on-covid-19-for-older-people" target="_blank">
+					   <img src="images/plus.png"> 
+					</a>
+				</div>
+		</center>
+
+		
+		
+<div class="pmcares">
+	<Center><H1>Want to Contribute <H1></Center>
+		<center>
+			<p>Fighting Covid-19 demands our collective participation.</p>
+			<p>In order to do so, PMCARES gives you a chance to punch Covid-19 right in the face by donating <b>any amount</b></p>
+			<p>This is the right time to show your patriotism and fulfill your national duties as a citizen</p>
+			<button type="button" class="btn btn-outline-success"><a href="https://www.pmcares.gov.in/en/">Donate</a></button>
+	   </center>
+	   <br>
+		<a href="https://www.pmcares.gov.in/en/"><img src="images/pm.jpg"/></a>
+</div>
+<div class="org">
 	<center><h2>Organizations Working for Covid 19</h2></center>
-<CENTER>	<ul>
-		<a href="https://www.mohfw.gov.in/">MoHFW, GOI</a>
-		<a href="https://www.who.int/">World Health organisation</a>
-	</ul></CENTER>
+<CENTER>
+		<ul>
+		   <li> <a href="https://www.mohfw.gov.in/">
+			   <span><img src="images/mohfw.jpg"</span> MoHFW, GOI</a></li>
+			<li><a href="https://www.who.int/"> 
+				<span> <img src="images/who.png"> World Health Organisation</span></a></li>
+	   </ul>
+</CENTER>
 	
 </div>
 
@@ -324,6 +425,7 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/about-covid.js"></script>
 
   
   <script src="js/main.js"></script>
